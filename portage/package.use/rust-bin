@@ -1,0 +1,1 @@
+>=dev-lang/rust-bin-1.84.1-r2 rustfmt clippy rust-src -abi_x86_32 rust-analyzer -verify-sig cpu_flags_x86_sse2

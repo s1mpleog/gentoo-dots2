@@ -1,0 +1,12 @@
+app-crypt/gpgme -qt6
+app-crypt/pinentry -qt6
+app-text/poppler -qt6
+dev-build/cmake -gui
+dev-build/meson -qt6
+dev-libs/plasma-wayland-protocols -qt6
+gui-libs/hyprland-qtutils -qt6
+media-gfx/graphviz -qt6
+net-wireless/wpa_supplicant -qt6
+www-client/vivaldi -qt6
+x11-misc/xdg-utils -plasma
+

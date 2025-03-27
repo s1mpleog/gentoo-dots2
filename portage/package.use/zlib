@@ -1,0 +1,9 @@
+sys-libs/zlib minizip
+# required by dev-qt/qtdeclarative-6.8.2::gentoo
+# required by dev-qt/qttools-6.8.2::gentoo[qml]
+# required by dev-qt/qttranslations-6.8.2::gentoo
+# required by dev-qt/qtbase-6.8.2-r2::gentoo[nls]
+# required by media-video/obs-studio-31.0.2::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-qt/qtbase-6.8.2-r2 vulkan

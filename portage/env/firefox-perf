@@ -1,0 +1,6 @@
+export CC=clang
+export CXX=clang++
+CFLAGS="-march=znver3 -O3 -pipe -flto -fno-semantic-interposition -ftree-vectorize"
+CXXFLAGS="${CFLAGS}"
+LDFLAGS="-Wl,-O2 -Wl,--as-needed -flto"
+RUSTFLAGS="-C target-cpu=znver3 -C opt-level=3"

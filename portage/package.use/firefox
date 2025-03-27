@@ -1,0 +1,1 @@
+>=www-client/firefox-128.7.0 X -valgrind clang dbus -debug -eme-free -gnome-shell -hardened hwaccel jumbo-build llvm_slot_19 pulseaudio system-av1 openh264 -telemetry wayland -wifi -wasm-sandbox -sndiod system-harfbuzz pgo system-jpeg system-webp system-libvpx system-icu gmp-autoupdate -jack -wasm-sandbox

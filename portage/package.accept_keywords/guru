@@ -1,0 +1,13 @@
+gui-apps/swww::guru ~amd64
+gui-apps/hyprlock::guru ~amd64
+dev-cpp/sdbus-c++ ~amd64
+dev-libs/hyprgraphics ~amd64
+gui-apps/hypridle::guru ~amd64
+app-misc/nwg-look::guru ~amd64
+x11-apps/xcur2png::guru ~amd64
+gui-apps/wlogout::guru ~amd64
+app-misc/brightnessctl::guru ~amd64
+x11-misc/pywal::guru ~amd64
+>=app-office/obsidian-1.8.7::guru ~amd64
+>=gui-apps/eww-0.6.0::guru ~amd64
+gui-apps/wlr-randr ~amd64

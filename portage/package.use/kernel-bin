@@ -1,0 +1,4 @@
+sys-kernel/gentoo-kernel-bin initramfs dracut
+# required by sys-kernel/gentoo-kernel-bin-6.6.74::gentoo[initramfs]
+# required by virtual/dist-kernel-6.6.74::gentoo
+>=sys-kernel/installkernel-50 dracut
