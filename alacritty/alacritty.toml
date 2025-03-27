@@ -1,0 +1,43 @@
+[general]
+live_config_reload = true
+import = [
+ '~/.alacritty-colorscheme/themes/doom_one.toml'
+]
+
+[window]
+padding = { x = 4, y = 4 }
+dynamic_padding = true
+decorations = "None"
+resize_increments = true
+
+[font]
+#normal = { family = "CaskaydiaMono Nerd Font", style = "Regular" }
+#normal = { family = "Comic Code", style = "SemiBold" }
+#normal = { family ="Comic Code", style = "Medium" }
+#normal = { family ="Comic Code", style = "Medium" }
+#bold = { family = "Comic Code", style = "Bold" }
+normal = { family = "Noto Sans Mono", style = "Medium" }
+#normal = { family = "JetBrainsMono Nerd Font", style = "SemiBold" }
+size = 13.0
+
+[font.offset]
+x = 0
+y = -3
+#"LigaConsolas Nerd Font" = { liga = true, calt = true }
+
+[env]
+TERM = "xterm-256color"
+
+[cursor]
+style = { blinking = "On", shape = "Beam" }
+
+vi_mode_style = { blinking = "On", shape = "Beam" }
+
+[mouse]
+hide_when_typing = true
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Key1"
+mods = "Control"
+

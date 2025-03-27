@@ -1,0 +1,123 @@
+{
+  "layer": "top",
+  "position": "top",
+  "margin-left": 10,
+  "margin-right": 10,
+  "spacing": 10,
+  "height": 20,
+  "margin-top": 10,
+  "margin-bottom": 10,
+  "exclusive": true,
+  "passthrough": false,
+  "gtk-layer-shell": true,
+  "reload_style_on_change": true,
+
+  "modules-left": ["hyprland/window"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": [
+    "custom/bluetooth",
+    "pulseaudio",
+    "backlight",
+    "network",
+    "clock",
+    "battery",
+    "custom/lock",
+    "custom/power"
+  ],
+
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon}  {capacity}%",
+    "format-charging": "{icon}  {capacity}%",
+    "format-plugged": " ",
+    "format-alt": "{icon}  {time}",
+    "format-icons": {
+      "default": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+      "charging": ["󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"]
+    }
+  },
+  "hyprland/workspaces": {
+    "sort-by-name": true,
+    "on-click": "activate"
+  },
+  "hyprland/window": {
+    "max-length": 75,
+    "separate-outputs": true,
+    "format": "     {title}",
+    "on-click": "wofi --show drun -i"
+  },
+
+  "clock": {
+    "locale": "C",
+    "format": "   {:%H:%M}",
+    "format-alt": "   {:%a,%b %d}" // Icon: calendar-alt
+  },
+
+  "network": {
+    "interval": 2,
+    "format-wifi": "    {signalStrength}%",
+    "format-ethernet": "   Wired Connected",
+    "format-linked": "Linked on {ipaddr}",
+    "format-disconnected": "   Disconnected",
+    "format-disabled": "   No Service Enabled",
+    "tooltip": false,
+    "max-length": 20,
+    "min-length": 6,
+    "format-alt": "   {essid}"
+  },
+  //sudo chmod g+w /sys/class/backlight/*/brightness
+
+  "backlight": {
+    // "device": "acpi_video1",
+    "format": "{icon} &#8239;{percent}%",
+    "format-icons": [" "],
+    "on-scroll-down": "brightnessctl -c backlight set 5%-",
+    "on-scroll-up": "brightnessctl -c backlight set +5%"
+  },
+  "pulseaudio": {
+    "format": " &#8239;&#8239;&#8239;{volume}%", // Icon for sound with volume percentage
+    "format-bluetooth": " {volume}%", // Bluetooth icon for Bluetooth devices with volume
+    "format-bluetooth-muted": " M", // Bluetooth icon with 'M' for muted
+    "format-muted": "󰝟", // Muted icon
+    "format-icons": {
+      "headphone": "", // Headphone icon
+      "hands-free": "🎧", // Hands-free icon
+      "headset": "🎧", // Headset icon
+      "phone": "📱", // Phone icon
+      "portable": "🔊", // Portable icon
+      "car": "🚗", // Car icon
+      "default": ["", "", ""] // Default icon for sound
+    },
+    "scroll-step": 1,
+    "on-click": "pavucontrol",
+    "ignored-sinks": ["Easy Effects Sink"],
+    "tooltip": true,
+    "tooltip-format": "Volume: {volume}%\nDevice: {desc}"
+  },
+  "custom/bluetooth": {
+    "format": " ",
+    "on-click": "blueman-manager",
+    "tooltip": true,
+    "tooltip-format": "Click to open Bluetooth settings\nRight click to toggle Bluetooth",
+    "interval": 1,
+    "return-type": "json"
+  },
+  // dead simple power button
+  "custom/power": {
+    "format": " ",
+    "on-click": "wlogout",
+    "tooltip": true,
+    "tooltip-format": "Power: left click on me to see help"
+  },
+
+  // dead simple lock button
+  "custom/lock": {
+    "format": " ",
+    "on-click": "hyprlock",
+    "tooltip": true,
+    "tooltip-format": "Lock me"
+  }
+}

@@ -1,0 +1,11 @@
+* {
+    bg-col: #1E1E2E;           /* Catppuccin Mocha base */
+    bg-col-light: #313244;     /* Catppuccin Mocha surface0 */
+    border-col: #313244;       /* Catppuccin Mocha surface0 */
+    selected-col: #313244;     /* Catppuccin Mocha surface0 */
+    blue: #89B4FA;             /* Catppuccin Mocha blue */
+    fg-col: #CDD6F4;           /* Catppuccin Mocha text */
+    fg-col2: #F38BA8;          /* Catppuccin Mocha red */
+    grey: #6C7086;             /* Catppuccin Mocha overlay0 */
+    width: 600;
+}

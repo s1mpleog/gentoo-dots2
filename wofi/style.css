@@ -1,0 +1,119 @@
+* {
+  transition: 0.2s;
+}
+
+window {
+  font-family: "Maple Mono NF", "JetBrainsMono Nerd Font", "FontAwesome", "Roboto", sans-serif;
+  font-size: 14px;
+  margin: 0;
+  border: 2px solid #c6a0f6; /* Catppuccin purple for border */
+  background-color: #24273a;
+  /* background-color: #1e1e2e; /* Mocha base */ 
+
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+#input {
+  padding: 8px 16px;
+  margin: 16px;
+  border: none;
+  color: #cdd6f4; /* Mocha text */
+  font-weight: normal;
+  background: #313244; /* Mocha surface0 */
+  outline: none;
+  border-radius: 8px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#input image {
+  color: #f5c2e7; /* Mocha pink */
+}
+
+#input:focus {
+  border: none;
+  outline: none;
+  background: #45475a; /* Mocha surface1 */
+}
+
+#inner-box {
+  margin: 16px;
+  margin-top: 0;
+  border: none;
+  color: #cdd6f4; /* Mocha text */
+  border-radius: 8px;
+  background: transparent;
+  padding: 8px 4px;
+}
+
+#inner-box * {
+  transition: none;
+}
+
+#outer-box {
+  margin: 0;
+  border: none;
+  padding: 0;
+  border-radius: 12px;
+}
+
+#scroll {
+  margin-top: 5px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+#text:selected {
+  color: #cdd6f4; /* Mocha text */
+  font-weight: bold;
+}
+
+#img {
+  margin-right: 16px;
+  background: transparent;
+}
+
+#text {
+  margin: 0;
+  border: none;
+  padding: 0;
+  color: #bac2de; /* Mocha subtext1 */
+  background: transparent;
+}
+
+#entry {
+  margin: 2px 0;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: transparent;
+  min-height: 36px;
+  font-weight: normal;
+}
+
+#entry:selected {
+  outline: none;
+  margin: 2px 0;
+  border: none;
+  border-radius: 8px;
+  background: #313244; /* Mocha surface0 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Accent colors for different entry types */
+#entry.activatable:hover {
+  background-color: #45475a; /* Mocha surface1 */
+}
+
+/* Modern indicator for selection */
+#entry:selected:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 25%;
+  height: 50%;
+  width: 3px;
+  background: #cba6f7; /* Mocha purple */
+  border-radius: 0 3px 3px 0;
+}

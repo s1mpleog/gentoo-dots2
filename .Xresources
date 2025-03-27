@@ -1,0 +1,145 @@
+Xft.antialias:	1
+Xft.hinting:	1
+Xft.autohint:	0
+
+Xft.hintstyle: hintslight
+Xft.rgba:	rgb
+Xft.lcdfilter: lcddefault
+Xft.dpi: 96
+! window padding
+st.borderpx: 20
+
+!-- values between 0.1  - 1.0 --! 
+
+st.alpha: 1.0 
+st.font:           Maple Mono NF:style:medium:pixelsize=15
+
+/*#define base00 #24273a*/
+/*#define base01 #494d64*/
+/*#define base02 #5b6078*/
+/*#define base03 #5b6078*/
+/*#define base04 #b8c0e0*/
+/*#define base05 #c6a0f6*/
+/*#define base06 #f4dbd6*/
+/*#define base07 #a5adcb*/
+/*#define base08 #ed8796*/
+/*#define base09 #f5a97f*/
+/*#define base0A #eed49f*/
+/*#define base0B #a6da95*/
+/*#define base0C #8bd5ca*/
+/*#define base0D #8aadf4*/
+/*#define base0E #c6a0f6*/
+/*#define base0F #f0c6c6*/
+/**/
+/**foreground:   base05*/
+/**background:   base00*/
+/**cursorColor:  base06*/
+/**/
+/**color0:       base01*/
+/**color1:       base08*/
+/**color2:       base0B*/
+/**color3:       base0A*/
+/**color4:       base0D*/
+/**color5:       base0E*/
+/**color6:       base0C*/
+/**color7:       base04*/
+/**color8:       base02*/
+/**color9:       base08*/
+/**color10:      base0B*/
+/**color11:      base0A*/
+/**color12:      base0D*/
+/**color13:      base0E*/
+/**color14:      base0C*/
+/**color15:      base07*/
+/**/
+/*tabbed.selfgcolor:   #c6a0f6*/
+/*tabbed.selbgcolor:   #24273a*/
+/*tabbed.normfgcolor:  #b8c0e0*/
+/*tabbed.normbgcolor:  #494d64*/
+
+
+/*#define base00 #282c34*/
+
+/*#define base01 #353b45*/
+/*#define base02 #3e4451*/
+/*#define base03 #545862*/
+/*#define base04 #565c64*/
+/*#define base05 #abb2bf*/
+/*#define base06 #b6bdca*/
+/*#define base07 #c8ccd4*/
+/*#define base08 #e06c75*/
+/*#define base09 #d19a66*/
+/*#define base0A #e5c07b*/
+/*#define base0B #98c379*/
+/*#define base0C #56b6c2*/
+/*#define base0D #61afef*/
+/*#define base0E #c678dd*/
+/*#define base0F #be5046*/
+/**/
+/**foreground:   base05*/
+/**background:   base00*/
+/**cursorColor:  base06*/
+/**color0:       base01*/
+/**color1:       base08*/
+/**color2:       base0B*/
+/**color3:       base0A*/
+/**color4:       base0D*/
+/**color5:       base0E*/
+/**color6:       base0C*/
+/**color7:       base04*/
+/**color8:       base02*/
+/**color9:       base08*/
+/**color10:      base0B*/
+/**color11:      base0A*/
+/**color12:      base0D*/
+/**color13:      base0E*/
+/**color14:      base0C*/
+/**color15:      base07*/
+/**/
+/*tabbed.selfgcolor:   #c678dd*/
+/*tabbed.selbgcolor:   #282c34*/
+/*tabbed.normfgcolor:  #abb2bf*/
+/*tabbed.normbgcolor:  #353b45*/
+
+
+! Base16 Colors (Dracula / Gruvbox / Nord inspired)
+! Doom One Color Scheme
+
+! General Colors
+*foreground:   #bbc2cf
+*background:   #242730
+*cursorColor:  #b6bdca
+
+! ANSI Colors
+*color0:       #353b45
+*color1:       #e06c75
+*color2:       #98c379
+*color3:       #e5c07b
+*color4:       #61afef
+*color5:       #c678dd
+*color6:       #56b6c2
+*color7:       #565c64
+
+! Bright Colors
+*color8:       #3e4451
+*color9:       #e06c75
+*color10:      #98c379
+*color11:      #e5c07b
+*color12:      #61afef
+*color13:      #c678dd
+*color14:      #56b6c2
+*color15:      #c8ccd4
+
+! DWM and Window Manager Colors
+dwm.normfgcolor:   #bbc2cf
+dwm.normbgcolor:   #242730
+dwm.normbordercolor:#282b2c
+dwm.selfgcolor:    #c678dd
+dwm.selbgcolor:    #282c34
+dwm.selbordercolor:#51afef
+
+! Tabbed Window Colors
+tabbed.selfgcolor:  #c678dd
+tabbed.selbgcolor:  #282c34
+tabbed.normfgcolor: #abb2bf
+tabbed.normbgcolor: #353b45
